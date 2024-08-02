@@ -158,9 +158,9 @@ void App::initColliders()
 		col->setPosition(300.f, 600.f);
 		col->setRotation(30.f);
 		col->setOrigin(col->getLocalBounds().width / 2.f, col->getLocalBounds().height / 2.f);
-		col->setFillColor(sf::Color(107, 214, 136));
+		col->setFillColor(DEFAULT_FILL_COLOR);
 		col->setOutlineThickness(1.f);
-		col->setOutlineColor(sf::Color::Green);
+		col->setOutlineColor(DEFAULT_OUTLINE_COLOR);
 		colliders.push_back(col);
 		col = nullptr;
 	}

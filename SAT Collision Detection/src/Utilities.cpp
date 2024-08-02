@@ -68,6 +68,10 @@ sf::Vector2f getCircumcenter(const sf::CircleShape& circle)
 
     //Crossing Point -> Cramer's rule
     float Determinant = pA12 * pB23 - pA23 * pB12;
+
+    if (Determinant == 0)
+        return p1;
+
     float DeterminantX = pC12 * pB23 - pC23 * pB12;
     float DeterminantY = pA12 * pC23 - pA23 * pC12;
     float x = DeterminantX / Determinant;
